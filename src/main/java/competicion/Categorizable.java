@@ -1,6 +1,6 @@
 package competicion;
 
-public interface Categorizable {
+public interface Categorizable extends Comparable<Categorizable> {
 	
 	Categoria getCategoria();
 

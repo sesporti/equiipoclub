@@ -241,6 +241,12 @@ public class Equipo implements Equipable, Clasificable{
 		System.out.printf("INFORME DEL EQUIPO\n%s\n%s\n%s"
 				,datosEquipo(),listarEntrenadores(),listarJugadores());
 	}
+
+	@Override
+	public int compareTo(Categorizable o) {
+		
+		return this.getCompeticion().getCategoria().compareTo(o.getCategoria());
+	}
 	
 	
 }

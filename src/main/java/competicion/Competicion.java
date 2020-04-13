@@ -71,4 +71,11 @@ public class Competicion implements Competicionable{
 		return this;
 	}
 
+
+	@Override
+	public int compareTo(Categorizable o) {
+		// TODO Auto-generated method stub
+		return this.getCategoria().compareTo(o.getCategoria());
+	}
+
 }
